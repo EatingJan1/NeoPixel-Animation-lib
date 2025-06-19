@@ -33,7 +33,12 @@ void LEDAnimation::taskFunction(void* params) {
     }
 }
 
-void LEDAnimation::setAnimation(AnimationType animationNumber) {
+bool LEDAnimation::setAnimation(AnimationType animationNumber) {
+    
+    if(animationNumber == activeAnimation)
+    {
+        return false;
+    }
     StopAllAnimations();
     
     switch(animationNumber) {
@@ -44,6 +49,7 @@ void LEDAnimation::setAnimation(AnimationType animationNumber) {
         case AnimationType::Static: activateStatic(); break;
         default: StopAllAnimations(); break;
     }
+    return true;
     
 }
 

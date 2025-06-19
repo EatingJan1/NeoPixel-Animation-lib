@@ -17,7 +17,7 @@ public:
     LEDAnimation(Adafruit_NeoPixel Pin, int countofPins);
     ~LEDAnimation();
     
-    void setAnimation(AnimationType animationNumber);
+    bool setAnimation(AnimationType animationNumber);
     void setColor(uint32_t color);
     void setDelaySpeed(uint delay);
     void update();
