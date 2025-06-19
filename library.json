@@ -1,0 +1,51 @@
+{
+  "name": "NeoPixel-Animation-lib",
+  "version": "1.0.0",
+  "description": "LED animation library for ESP32 with NeoPixel support and FreeRTOS task handling.",
+  "keywords": [
+    "esp32",
+    "arduino",
+    "neopixel",
+    "led",
+    "led animation",
+    "rgb",
+    "status indicator",
+    "visual alert",
+    "rtos",
+    "freertos",
+    "task",
+    "iot",
+    "signal light"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EatingJan1/NeoPixel-Animation-lib.git"
+  },
+  "authors": [
+    {
+      "name": "Eating1",
+      "url": "https://github.com/EatingJan1",
+      "maintainer": true
+    },
+    {
+      "name": "DracoRex462",
+      "url": "https://github.com/DracoRex462",
+      "maintainer": true
+    }
+  ],
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "espressif32"
+  ],
+  "headers": [
+    "LEDAnimation.h"
+  ],
+  "dependencies": [
+    {
+      "name": "Adafruit NeoPixel",
+      "version": "^1.13.0"
+    }
+  ]
+}
